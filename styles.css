@@ -17,7 +17,7 @@ html, body {
     height: 100%;
     font-family: 'Playfair Display', serif;
     background-color: #fefefe;
-    color: #2a2a2a;
+    color: #000000;
 }
 
 a {
@@ -25,7 +25,7 @@ a {
     text-decoration: none;
 }
 
-.wrapper {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -40,8 +40,24 @@ header {
 .logo {
     max-height: 80px;
     margin-bottom: 1rem;
+    display: block;
 }
 
+/* Standard (heller Modus): dunkles Logo zeigen */
+.logo-dark {
+    display: none;
+}
+
+/* Darkmode: weisses Logo zeigen */
+@media (prefers-color-scheme: dark) {
+    .logo-light {
+        display: none;
+    }
+
+    .logo-dark {
+        display: block;
+    }
+}
 .subtitle {
     font-style: italic;
     font-size: 1rem;
