@@ -5,10 +5,6 @@
     font-style: normal;
     font-display: swap;
 }
-:root {
-    color-scheme: light dark;
-}
-
 
 /* Grundlayout – Mobile First */
 * {
@@ -21,7 +17,7 @@ html, body {
     height: 100%;
     font-family: 'Playfair Display', serif;
     background-color: #fefefe;
-    color: #000;
+    color: #2a2a2a;
 }
 
 a {
@@ -35,15 +31,16 @@ body {
     min-height: 100vh;
 }
 
+/* HEADER */
 header {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem;
     background-color: #eaeaea;
 }
 
 .logo {
-    max-height: 5rem;
-    margin-bottom: 1rem;
+    max-height: 6.25rem; /* entspricht 100px */
+    margin-bottom: 2rem; /* 👇 Abstand zwischen Logo und Subtitle anpassbar */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +51,6 @@ header {
     display: none;
 }
 
-/* Darkmode: helle Version ausblenden, weisse anzeigen */
 @media (prefers-color-scheme: dark) {
     .logo-light {
         display: none;
@@ -67,16 +63,22 @@ header {
     }
 }
 
+/* Subtitle */
 .subtitle {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 350; /* 👇 feinere Schrift – passe diesen Wert bei Bedarf an (z.B. 300, 400) */
+    letter-spacing: 0.01em; /* optional: zartere Optik */
+    margin-bottom: 0;
 }
 
+/* MAIN */
 main {
     flex: 1;
-    padding: 2rem 1rem;
-    max-width: 44rem;
+    max-width: 50rem; /* ≈ 800px */
     margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
 h1, h2 {
@@ -84,17 +86,19 @@ h1, h2 {
     margin-bottom: 0.5rem;
 }
 
-.intro {
-    margin-bottom: 2rem;
-}
-
 .intro p {
     font-size: 1.1rem;
     line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.info {
+    margin-top: 2rem;
 }
 
 .info ul {
     list-style: none;
+    padding: 0;
     margin-bottom: 1rem;
 }
 
@@ -103,6 +107,7 @@ h1, h2 {
     line-height: 1.6;
 }
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 1rem;
@@ -111,7 +116,7 @@ footer {
     background-color: #f5f5f5;
 }
 
-/* Darkmode allgemein */
+/* DARKMODE */
 @media (prefers-color-scheme: dark) {
     html, body {
         background-color: #1a1a1a;
@@ -132,17 +137,19 @@ footer {
     }
 }
 
-/* Responsive Anpassungen */
+/* GRÖSSERE BILDSCHIRME */
 @media (min-width: 768px) {
     .logo {
-        max-height: 7rem;
+        max-height: 7.5rem;
     }
 
     .subtitle {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     main {
         padding: 3rem;
+        text-align: left; /* 👇 Haupttext auf Desktop leicht nach links verschoben */
+        /* Du kannst hier auch zusätzlich padding-left oder margin-left verwenden */
     }
 }
