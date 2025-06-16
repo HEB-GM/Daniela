@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Playfair Display';
-    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    src: url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -34,28 +34,28 @@ body {
 /* HEADER */
 header {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem; /* 32px */
     background-color: #eaeaea;
 }
 
 .logo {
     max-height: 6.25rem; /* entspricht 100px */
-    margin-bottom: 2rem; /* 👇 Abstand zwischen Logo und Subtitle anpassbar */
+    margin-bottom: 2rem; /* Abstand Logo → Subtitle anpassbar */
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Nur helle Version zuerst anzeigen */
+/* Standard (heller Modus): dunkles Logo zeigen */
 .logo-dark {
     display: none;
 }
 
+/* Darkmode: weisses Logo zeigen */
 @media (prefers-color-scheme: dark) {
     .logo-light {
         display: none;
     }
-
     .logo-dark {
         display: block;
         margin-left: auto;
@@ -66,9 +66,9 @@ header {
 /* Subtitle */
 .subtitle {
     font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 350; /* 👇 feinere Schrift – passe diesen Wert bei Bedarf an (z.B. 300, 400) */
-    letter-spacing: 0.01em; /* optional: zartere Optik */
+    font-size: 1.2rem;      /* 19.2px */
+    font-weight: 350;       /* feineres Schriftbild – anpassbar */
+    letter-spacing: 0.01em; /* optional zartere Optik */
     margin-bottom: 0;
 }
 
@@ -77,79 +77,69 @@ main {
     flex: 1;
     max-width: 50rem; /* ≈ 800px */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem;    /* 32px */
     text-align: center;
 }
 
-h1, h2 {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.intro p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-top: 1rem;
-}
-
-.info {
-    margin-top: 2rem;
-}
-
-.info ul {
+/* 👇 Entfernt Punkte/Bullets vor allen Listen im Hauptbereich (z.B. Öffnungszeiten) */
+main ul {
     list-style: none;
     padding: 0;
     margin-bottom: 1rem;
 }
 
-.info address {
-    font-style: normal;
-    line-height: 1.6;
+h1, h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem; /* 8px */
+}
+
+.intro p {
+    font-size: 1.1rem; /*17.6px*/
+    line-height: 1.5;
+    margin-top: 1rem;  /*16px*/
+}
+
+.info {
+    margin-top: 2rem;  /*32px*/
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 1rem;     /*16px*/
+    font-size: 0.9rem; /*14.4px*/
     color: #777;
     background-color: #f5f5f5;
 }
 
-/* DARKMODE */
+/* DARKMODE allgemein */
 @media (prefers-color-scheme: dark) {
     html, body {
         background-color: #1a1a1a;
         color: #f0f0f0;
     }
-
     header {
         background-color: #2a2a2a;
     }
-
     footer {
         background-color: #2a2a2a;
         color: #999;
     }
-
     a {
         color: #ddd;
     }
 }
 
-/* GRÖSSERE BILDSCHIRME */
-@media (min-width: 768px) {
+/* Grössere Bildschirme ab 48rem (≈768px) */
+@media (min-width: 48rem) {
     .logo {
-        max-height: 7.5rem;
+        max-height: 7.5rem; /* ≈ 120px */
     }
-
     .subtitle {
-        font-size: 1.4rem;
+        font-size: 1.4rem;  /*22.4px*/
     }
-
     main {
-        padding: 3rem;
-        text-align: left; /* 👇 Haupttext auf Desktop leicht nach links verschoben */
-        /* Du kannst hier auch zusätzlich padding-left oder margin-left verwenden */
+        padding: 3rem;      /*48px*/
+        text-align: left;   /*Haupttext auf Desktop linksbündig*/
     }
 }

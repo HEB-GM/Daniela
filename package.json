@@ -1,0 +1,16 @@
+{
+  "name": "filafil-website",
+  "version": "1.0.0",
+  "description": "Statische Website für Fil à Fil mit Eleventy",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "keywords": ["eleventy","static-site-generator","filafil"],
+  "author": "Daniela Britschgi",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
