@@ -1,9 +1,12 @@
 @font-face {
     font-family: 'Playfair Display';
-    src: url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    /* Erst WOFF2, dann WOFF als Fallback */
+    src: url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght-webfont.woff2') format('woff2'),
+    url('/src/assets/fonts/PlayfairDisplay-VariableFont_wght-webfont.woff') format('woff');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
+
 }
 
 /* Grundlayout – Mobile First */
