@@ -5,8 +5,9 @@ title: "Fil à Fil – Handgewebtes"
 
 # Herzlich Willkommen
 
-Im Handwebeatelier **Fil à Fil** entstehen einzigartige, handgewebte Textilien mit Liebe zum Detail und zur Tradition.
+## Handgewebtes von Daniela Britschgi
 
+Im Handwebeatelier **Fil à Fil** entstehen einzigartige, handgewebte Textilien mit Liebe zum Detail und zur Tradition.
 
 ## Öffnungszeiten
 
