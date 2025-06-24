@@ -58,5 +58,6 @@ Stuffenweise Upgrade möglich (https://www.netlify.com/pricing/#pricing-table)
 #### Integrationen  
 Unterstützt GitHub, GitLab, Bitbucket, or Azure DevOps repository (https://docs.netlify.com/configure-builds/overview/#connect-to-your-git-provider)
 
-
+## Fazit 
+Die drei Hostingplattformen bieten allesamt eine zuverlässige und kostenlose Möglichkeit, statische Webseiten zu veröffentlichen. Bei unserer Recherche hat sich gezeigt, dass sich die Anbieter hauptsächlich im Funktionsumfang unterscheiden. GitHub Pages stellt die einfachste Lösung dar und bietet die geringsten Funktionalitäten, wäre für unser Projekt jedoch vollkommen ausreichend gewesen. Cloudflare Pages bietet darüber hinaus erweiterte Möglichkeiten, wie zum Beispiel unbegrenzte Bandbreite pro Monat. Netlify verfügt über den umfassendsten Funktionsumfang, inklusive der Integration mit verschiedenen Git-Plattformen sowie weitere zusätzlichen  Features
 
