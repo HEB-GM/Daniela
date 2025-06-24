@@ -2,7 +2,7 @@
 In diesem Dokument vergleichen wir drei verschiedene Hostinganbieter. 
 Die von uns ausgewählten Hostinganbieter sind Netlify, Cloudflare Pages und GitHub Pages.  
 Diese werden anhand der folgenden Bewertungskriterien verglichen:
-- Maximale Site-Größe
+- Maximale Site-Grösse
 - Bandbreite pro Monat
 - Vorschau-Funktion bei Änderungen
 - Eigene Domain
